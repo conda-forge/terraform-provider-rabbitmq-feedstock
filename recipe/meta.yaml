@@ -1,13 +1,13 @@
 {% set provider = "RabbitMQ" %}
 {% set goname = "github.com/terraform-providers/terraform-provider-"+provider.lower() %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 {% set name = goname.split('/')[-1] %}
 {% set pkg_src = ('src/'+goname).replace("/",os.sep) %}
 
 {% set x4_plugin = name + '_v' + version + "_x4" + (".exe" if win else "")%}
 
-{% set sha256 = "bcf637a89b00640d2c434b6420cc78f86fe83722d83a0b4e9c58a7d1e6d42eab" %}
+{% set sha256 = "9f1078b448b0e904d2237522c64988125dfa1be140772cd517eaf2aa432cfb93" %}
 {% set sha256_win64 = "7a45b63dbec89d0357b663a8d08414d5d34b499dab26c93e871a9c748ee08ea6" %}
 
 package:
